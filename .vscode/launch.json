@@ -9,14 +9,14 @@
             "name": "Chrome",
             "request": "launch",
             "type": "chrome",
-            "url": "http://localhost:5500",
+            "url": "http://localhost:3000",
             "webRoot": "${workspaceFolder}"
         },
         {
             "name": "Edge",
             "request": "launch",
             "type": "msedge",
-            "url": "http://localhost:5500",
+            "url": "http://localhost:3000",
             "webRoot": "${workspaceFolder}"
         },
         {
@@ -24,7 +24,7 @@
             "request": "launch",
             "reAttach": true,
             "name": "Firefox",
-            "url": "http://localhost:5500",
+            "url": "http://localhost:3000",
             "webRoot": "${workspaceFolder}"
         }
 
