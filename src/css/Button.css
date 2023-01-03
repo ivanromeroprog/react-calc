@@ -1,0 +1,28 @@
+.calc-button{
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 4px;
+    cursor: pointer;
+    height: 50px;
+    min-width: 50px;
+    background-color: coral;
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    transition: translate 0.5s, background-color 0.5s, box-shadow 0.5s;
+    box-shadow: 0px 10px 10px -7px #000000;
+}
+
+.calc-button:hover{
+    background-color: aqua;
+}
+
+.calc-button:active{
+    transition: background-color 0.1s;
+    background-color: white;
+    translate: -2px 2px;
+    box-shadow: 0px 0px 1px -7px #000000;
+}

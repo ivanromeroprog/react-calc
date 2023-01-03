@@ -1,13 +1,14 @@
+import React from 'react';
 import '../css/Button.css';
 
 function Button(props){
 
-    const esOperador = (child) => {
-        return 'calc-button-' + child;
-    }
+    const esOperador = (value) => {
+        return isNaN(value) && value != '.' && value != '=';
+    };
 
     return (
-        <button className={`calc-button ${esOperador(props.children)}`} onClick={props.action}>{props.children}</button>
+        <button type='button' className={`calc-button${esOperador(props.children) ? ' calc-button-operator' : '' }`} onClick={props.action}>{props.children}</button>
     );
     
 }
