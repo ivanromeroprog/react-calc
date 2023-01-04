@@ -8,7 +8,10 @@ function Button(props){
     };
 
     return (
-        <button type='button' className={`calc-button${esOperador(props.children) ? ' calc-button-operator' : '' }`} onClick={props.action}>{props.children}</button>
+        <button
+        type='button'
+        className={`calc-button${esOperador(props.children) ? ' calc-button-operator' : '' }`}
+        onClick={()=>props.action(props.children)}>{props.children}</button>
     );
     
 }
