@@ -3,7 +3,7 @@ import './App.css';
 import Button from './components/Button';
 import Screen from './components/Screen';
 import ClearButton from './components/ClearButton';
-import logoApp from './img/Calculator.png';
+import CalcLogo from './components/CalcLogo';
 import {evaluate} from 'mathjs';
 
 
@@ -31,10 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="contenedor">
-        <h1><img src={logoApp} className="logo" alt='Logo' /> React Calc</h1>
-        
-      </div>
+      <CalcLogo />
       <div className="calculadora">
       <Screen input={input} />
         <div className="fila">

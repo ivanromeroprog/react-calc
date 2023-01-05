@@ -16,8 +16,18 @@
     box-shadow: 0px 10px 10px -7px #000000;
 }
 
+.calc-button-operator{
+    background-color: #ccf3db;
+}
+
+
 .calc-button:hover{
     background-color: rgb(255, 192, 151);
+}
+
+
+.calc-button-operator:hover{
+    background-color: #8fdba8;
 }
 
 .calc-button:active{
